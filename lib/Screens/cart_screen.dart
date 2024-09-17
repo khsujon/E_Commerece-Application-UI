@@ -22,7 +22,9 @@ class _CartScreenState extends State<CartScreen> {
         backgroundColor: pageBgColor,
         automaticallyImplyLeading: false,
         title: InkWell(
-          onTap: () {},
+          onTap: () {
+            Navigator.pop(context);
+          },
           child: Container(
               height: height * 0.06,
               width: width * 0.085,
@@ -36,7 +38,7 @@ class _CartScreenState extends State<CartScreen> {
               ),
               child: Padding(
                 padding: EdgeInsets.only(left: width * .01),
-                child: Icon(
+                child: const Icon(
                   Icons.arrow_back_ios,
                   size: 18,
                 ),
@@ -82,7 +84,7 @@ class _CartScreenState extends State<CartScreen> {
                   return Padding(
                     padding: EdgeInsets.symmetric(horizontal: width * 0.02),
                     child: Container(
-                      padding: EdgeInsets.only(bottom: 10),
+                      padding: const EdgeInsets.only(bottom: 10),
                       height: height * 0.22,
                       width: width,
                       child: Column(
@@ -102,7 +104,7 @@ class _CartScreenState extends State<CartScreen> {
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: width * 0.02),
-                                child: Container(
+                                child: SizedBox(
                                   height: height * 0.16,
                                   width: width * 0.67,
                                   child: Column(
@@ -131,7 +133,8 @@ class _CartScreenState extends State<CartScreen> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsets.only(top: 3.0),
+                                        padding:
+                                            const EdgeInsets.only(top: 3.0),
                                         child: Text(
                                           _list[index]
                                               .selectedVariant
@@ -155,8 +158,8 @@ class _CartScreenState extends State<CartScreen> {
                                                 weight: FontWeight.w600),
                                           ),
                                           Padding(
-                                            padding:
-                                                EdgeInsets.only(right: 5.0),
+                                            padding: const EdgeInsets.only(
+                                                right: 5.0),
                                             child: Row(
                                               children: [
                                                 Container(
@@ -172,13 +175,12 @@ class _CartScreenState extends State<CartScreen> {
                                                           color: cardBgColor,
                                                           width: 2,
                                                         )),
-                                                    child: Icon(
+                                                    child: const Icon(
                                                       Icons.remove,
                                                       size: 18,
                                                     )),
-                                                Padding(
-                                                  padding:
-                                                      const EdgeInsets.all(10),
+                                                const Padding(
+                                                  padding: EdgeInsets.all(10),
                                                   child: Text('1'),
                                                 ),
                                                 Container(
@@ -193,7 +195,7 @@ class _CartScreenState extends State<CartScreen> {
                                                             color:
                                                                 selectionColor,
                                                             width: 2)),
-                                                    child: Icon(
+                                                    child: const Icon(
                                                       Icons.add,
                                                       size: 18,
                                                       color: selectionColor,
@@ -209,8 +211,8 @@ class _CartScreenState extends State<CartScreen> {
                               )
                             ],
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 15.0),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 15.0),
                             child: Divider(
                               color: cardBgColor,
                               thickness: 1,
@@ -223,7 +225,7 @@ class _CartScreenState extends State<CartScreen> {
                 },
               ),
             ),
-            Container(
+            SizedBox(
               height: height * 0.1,
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: height * .015),
@@ -251,7 +253,7 @@ class _CartScreenState extends State<CartScreen> {
                       ),
                       Row(
                         children: [
-                          Text(
+                          const Text(
                             'Promocode applied',
                             style: TextStyle(
                                 color: selectionColor,
@@ -268,7 +270,7 @@ class _CartScreenState extends State<CartScreen> {
                                     color: selectionColor,
                                     borderRadius:
                                         BorderRadius.circular(width * 0.02)),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.check,
                                   color: Colors.white,
                                   size: 15,
@@ -281,13 +283,93 @@ class _CartScreenState extends State<CartScreen> {
                 ),
               ),
             ),
-            Container(
+            SizedBox(
               height: height * 0.15,
-              color: Colors.yellow,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: width * 0.02),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Subtotal:',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                        Text(
+                          '\$800',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Delivery Fee:',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                        Text(
+                          '\$5',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Discount:',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                        Text(
+                          '40%',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      color: Colors.grey.shade300,
+                    )
+                  ],
+                ),
+              ),
             ),
-            Container(
+            SizedBox(
               height: height * 0.12,
-              color: Colors.white,
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: height * 0.02),
+                child: Container(
+                  height: height * 0.08,
+                  width: width * .8,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(width * 0.04),
+                    color: selectionColor,
+                  ),
+                  child: Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Checkout for ',
+                          style: customTextStyle(
+                              size: 15, weight: FontWeight.w500),
+                        ),
+                        Text('\$480.00',
+                            style: customTextStyle(
+                                size: 16, weight: FontWeight.w600)),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

@@ -211,7 +211,7 @@ List<ModelData> productModel = [
   // Accessories with color variants
   ModelData(
     id: "17",
-    name: "Apple MagSafe Charger",
+    name: "Apple Charger",
     image: 'images/Apple MagSafe Charger.png',
     price: 39,
     category: 'Accessories',
@@ -233,7 +233,7 @@ List<ModelData> productModel = [
   ),
   ModelData(
     id: "19",
-    name: "Anker PowerCore 10000",
+    name: "Anker PowerCore",
     image: 'images/Anker PowerCore 10000.png',
     price: 49,
     category: 'Accessories',
@@ -268,14 +268,15 @@ List<ModelData> DiscountProductModel = [
     rating: 5.0,
   ),
   ModelData(
-    id: "14",
-    name: "PlayStation 5",
-    image: 'images/PlayStation 5.png',
-    price: 499,
-    category: 'Gaming Console',
+    id: "7",
+    name: "AirPods Max",
+    image: 'images/AirPods.png',
+    price: 549,
+    category: 'Headphone',
     details:
-        'PlayStation 5 features 4K gaming, haptic feedback, and an ultra-fast SSD.',
-    rating: 4.9,
+        'Apple AirPods Max deliver spatial audio with dynamic head tracking, active noise cancellation, and a custom-designed driver for high-fidelity sound. It comes with a premium aluminum frame.',
+    rating: 4.6,
+    variants: ['Black', 'White', 'Green'], // Color variants
   ),
   ModelData(
     id: "11",
@@ -288,14 +289,15 @@ List<ModelData> DiscountProductModel = [
     rating: 4.7,
   ),
   ModelData(
-    id: "18",
-    name: "Logitech MX Master 3",
-    image: 'images/Logitech MX Master 3.png',
-    price: 99,
-    category: 'Accessories',
+    id: "15",
+    name: "Nintendo Switch",
+    image: 'images/Nintendo Switch.png',
+    price: 299,
+    category: 'Gaming Console',
     details:
-        'Logitech MX Master 3 offers precise control, ergonomic design, and advanced customization.',
-    rating: 4.9,
+        'Nintendo Switch offers handheld gaming versatility, dockable for TV play, and supports exclusive games like Zelda and Mario. It features a 6.2-inch screen and Joy-Con controllers.',
+    rating: 4.8,
+    variants: ['32GB', '128GB'], // Storage variant
   ),
 ];
 

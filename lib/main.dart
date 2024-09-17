@@ -1,4 +1,3 @@
-import 'package:e_com_ui/Screens/cart_screen.dart';
 import 'package:e_com_ui/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: CartScreen(),
+      home: HomeScreen(),
     );
   }
 }
