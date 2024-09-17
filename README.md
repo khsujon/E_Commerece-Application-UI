@@ -1,16 +1,21 @@
-# e_com_ui
+# E-commerce Mobile App UI
 
-A new Flutter project.
+A responsive **E-commerce Mobile App UI** built with **Flutter**, designed to provide a seamless shopping experience on mobile devices. This UI includes a clean and modern home page, product details screen, and a cart page.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Responsive Design**: Fully optimized for different screen sizes.
+- **Home Page**:
+  - Search Bar to find products quickly.
+  - Slideshow for discounts and featured products.
+  - Categories section to browse products by type.
+  - GridView to display all products in an organized manner.
+  - Bottom Navigation Bar for easy navigation across the app.
+- **Product Details Screen**: Detailed information about the selected product, including images, description, price, and variants.
+- **Cart Page**: Manage items added to the cart, update quantities, or remove items.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technologies Used
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter**: For building the UI.
+- **Dart**: Programming language.
