@@ -15,9 +15,12 @@ A responsive **E-commerce Mobile App UI** built with **Flutter**, designed to pr
 - **Cart Page**: Manage items added to the cart, update quantities, or remove items.
 
 ## Screenshots
-![Home Page](screenshots/home_page.jpg)
-![Product Details](screenshots/product_details.jpg)
-![Cart Page](screenshots/cart_page.jpg)
+
+<p align="center">
+  <img src="screenshots/home_page.jpg" alt="Home Page" width="300" style="margin-right: 10px;">
+  <img src="screenshots/product_details.jpg" alt="Product Details" width="300" style="margin-right: 10px;">
+  <img src="screenshots/cart_page.jpg" alt="Cart Page" width="300">
+</p>
 
 ## Technologies Used
 
