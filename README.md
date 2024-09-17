@@ -17,8 +17,8 @@ A responsive **E-commerce Mobile App UI** built with **Flutter**, designed to pr
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/home_page.jpg" alt="Home Page" width="200" style="margin-right: 30px;">
-  <img src="screenshots/product_details.jpg" alt="Product Details" width="200" style="margin-right: 30px;">
+  <img src="screenshots/home_page.jpg" alt="Home Page" width="200" style="margin-right: 100px;">
+  <img src="screenshots/product_details.jpg" alt="Product Details" width="200" style="margin-right: 100px;">
   <img src="screenshots/cart_page.jpg" alt="Cart Page" width="200">
 </p>
 
