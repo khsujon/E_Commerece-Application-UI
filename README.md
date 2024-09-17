@@ -14,6 +14,10 @@ A responsive **E-commerce Mobile App UI** built with **Flutter**, designed to pr
 - **Product Details Screen**: Detailed information about the selected product, including images, description, price, and variants.
 - **Cart Page**: Manage items added to the cart, update quantities, or remove items.
 
+## Screenshots
+![Home Page](screenshots/home_page.jpg)
+![Product Details](screenshots/product_details.jpg)
+![Cart Page](screenshots/cart_page.jpg)
 
 ## Technologies Used
 
