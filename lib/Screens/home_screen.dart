@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: pageBgColor,
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          backgroundColor: pageBgColor,
           automaticallyImplyLeading: false,
           flexibleSpace: Appbar(),
         ),
@@ -110,38 +110,39 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             // Bottom navigation bar
-            Container(
-              padding: EdgeInsets.only(top: height * 0.015),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: List.generate(_navItems.length, (index) {
-                  return InkWell(
-                    onTap: () {
-                      setState(() {
-                        selectedIndex = index; // Update selected index
-                      });
-                    },
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          _navItems[index]["icon"],
-                          color: selectedIndex == index
-                              ? selectionColor // Change to green if selected
-                              : Colors.black, // Default color
-                        ),
-                        Text(
-                          _navItems[index]["text"],
-                          style: TextStyle(
+            Expanded(
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: List.generate(_navItems.length, (index) {
+                    return InkWell(
+                      onTap: () {
+                        setState(() {
+                          selectedIndex = index; // Update selected index
+                        });
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            _navItems[index]["icon"],
                             color: selectedIndex == index
                                 ? selectionColor // Change to green if selected
                                 : Colors.black, // Default color
                           ),
-                        ),
-                      ],
-                    ),
-                  );
-                }),
+                          Text(
+                            _navItems[index]["text"],
+                            style: TextStyle(
+                              color: selectedIndex == index
+                                  ? selectionColor // Change to green if selected
+                                  : Colors.black, // Default color
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  }),
+                ),
               ),
             ),
           ],

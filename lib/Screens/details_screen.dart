@@ -3,6 +3,7 @@ import 'package:e_com_ui/Utils/custom_colors.dart';
 import 'package:e_com_ui/Utils/custom_textstyle.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class DetailsScreen extends StatefulWidget {
   ModelData? detailsData;
   DetailsScreen({super.key, required this.detailsData});
@@ -91,14 +92,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
               child: Center(
                   child: Image.asset(
                 widget.detailsData!.image.toString(),
-                height: height * 0.35,
-                width: width * 0.50,
+                // height: height * 0.20,
+                // width: width,
                 fit: BoxFit.cover,
               ))),
 
           //details part
           Container(
-            height: height * 0.58,
+            height: height * 0.55,
             width: width,
             decoration: const BoxDecoration(
                 color: pageBgColor,
@@ -300,7 +301,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
 
                 Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: width * 0.05, vertical: height * 0.02),
+                    horizontal: width * 0.05,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,

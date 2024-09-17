@@ -51,11 +51,11 @@ class _TopViewState extends State<TopView> {
                 // Image part of the card
                 Positioned(
                   right: -30, // Allow overflow on the right
-                  top: -70, // Adjust to control vertical overflow
+                  top: -130, // Adjust to control vertical overflow
                   child: Image.asset(
                     discountProduct.image.toString(),
                     height: height * 0.50,
-                    width: width * 0.5, // Adjust the height as needed
+                    width: width * 0.52, // Adjust the height as needed
                     fit: BoxFit.contain,
                   ),
                 ),

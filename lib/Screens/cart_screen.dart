@@ -26,10 +26,10 @@ class _CartScreenState extends State<CartScreen> {
             Navigator.pop(context);
           },
           child: Container(
-              height: height * 0.06,
+              height: height * 0.04,
               width: width * 0.085,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(width * 0.0425),
                 color: pageBgColor,
                 border: Border.all(
                   color: cardBgColor, // Set the border color
@@ -55,10 +55,10 @@ class _CartScreenState extends State<CartScreen> {
           Padding(
             padding: const EdgeInsets.only(right: 20.0),
             child: Container(
-                height: height * 0.06,
+                height: height * 0.04,
                 width: width * 0.085,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(width * 0.0425),
                   color: pageBgColor,
                   border: Border.all(
                     color: cardBgColor, // Set the border color
@@ -77,6 +77,7 @@ class _CartScreenState extends State<CartScreen> {
         child: Column(
           children: [
             Container(
+              padding: EdgeInsets.only(top: height * 0.04),
               height: height * 0.55,
               child: ListView.builder(
                 itemCount: _list.length,
@@ -93,7 +94,7 @@ class _CartScreenState extends State<CartScreen> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Container(
-                                  height: height * 0.16,
+                                  height: height * 0.14,
                                   width: width * 0.25,
                                   decoration: BoxDecoration(
                                     borderRadius:
@@ -164,13 +165,13 @@ class _CartScreenState extends State<CartScreen> {
                                               children: [
                                                 Container(
                                                     height: height * 0.05,
-                                                    width: width * 0.07,
+                                                    width: width * 0.12,
                                                     decoration: BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(
                                                                     width *
-                                                                        0.017),
+                                                                        0.03),
                                                         border: Border.all(
                                                           color: cardBgColor,
                                                           width: 2,
@@ -185,12 +186,12 @@ class _CartScreenState extends State<CartScreen> {
                                                 ),
                                                 Container(
                                                     height: height * 0.05,
-                                                    width: width * 0.07,
+                                                    width: width * 0.12,
                                                     decoration: BoxDecoration(
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(width *
-                                                                    0.017),
+                                                                    0.03),
                                                         border: Border.all(
                                                             color:
                                                                 selectionColor,
@@ -264,7 +265,7 @@ class _CartScreenState extends State<CartScreen> {
                             padding:
                                 EdgeInsets.only(right: width * 0.04, left: 10),
                             child: Container(
-                                height: height * 0.028,
+                                height: height * 0.020,
                                 width: width * 0.04,
                                 decoration: BoxDecoration(
                                     color: selectionColor,
@@ -343,9 +344,9 @@ class _CartScreenState extends State<CartScreen> {
               ),
             ),
             SizedBox(
-              height: height * 0.12,
+              height: height * 0.09,
               child: Padding(
-                padding: EdgeInsets.symmetric(vertical: height * 0.02),
+                padding: EdgeInsets.symmetric(vertical: 2.0),
                 child: Container(
                   height: height * 0.08,
                   width: width * .8,

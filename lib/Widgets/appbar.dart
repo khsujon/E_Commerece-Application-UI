@@ -16,7 +16,7 @@ class _AppbarState extends State<Appbar> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+      padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
       child: Container(
         color: pageBgColor,
         height: height * 0.2,
@@ -39,17 +39,17 @@ class _AppbarState extends State<Appbar> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => CartScreen(),
+                        builder: (context) => const CartScreen(),
                       ));
                 },
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
                     Container(
-                        height: height * 0.06,
-                        width: width * 0.085,
+                        height: height * 0.048,
+                        width: width * 0.1,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(30),
+                          borderRadius: BorderRadius.circular(width * 0.056),
                           color: pageBgColor,
                           border: Border.all(
                             color: cardBgColor, // Set the border color
@@ -64,13 +64,13 @@ class _AppbarState extends State<Appbar> {
                       right: -1,
                       top: -6,
                       child: Container(
-                          height: height * 0.03,
-                          width: width * 0.043,
+                          height: height * 0.025,
+                          width: width * 0.05,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(width * 0.025),
                             color: selectionColor,
                           ),
-                          child: Center(child: Text('3'))),
+                          child: const Center(child: Text('3'))),
                     ),
                   ],
                 ),
